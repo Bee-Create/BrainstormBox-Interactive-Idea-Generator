@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Brainstorm Box is a creative prompt and idea generator."
+  >
+
+  <title>Brainstorm Box | Find Your Next Idea</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo" href="#" aria-label="Brainstorm Box home">
+      Brainstorm<span>Box</span>
+    </a>
+
+    <p class="tagline">A little spark goes a long way.</p>
+  </header>
+
+  <main class="container">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">YOUR NEXT IDEA STARTS HERE</p>
+      <h1 id="page-title">Let's get those ideas flowing.</h1>
+      <p>
+        Need inspiration? Pick a category, find a spark,
+        and see where your imagination takes you.
+      </p>
+    </section>
+
+    <section class="idea-panel" aria-labelledby="generator-heading">
+      <h2 id="generator-heading">Find your spark</h2>
+
+      <div class="controls">
+        <div class="field">
+          <label for="category">Idea category</label>
+
+          <select id="category">
+            <option value="all">Surprise me</option>
+            <option value="writing">Writing</option>
+            <option value="web">Website ideas</option>
+            <option value="coding">Coding projects</option>
+            <option value="blogging">Blog topics</option>
+          </select>
+        </div>
+
+        <button id="generate-btn" type="button">
+          Generate an idea
+        </button>
+      </div>
+
+      <article class="idea-card" aria-labelledby="idea-title">
+        <p class="eyebrow">YOUR CREATIVE SPARK</p>
+
+        <h3 id="idea-title">Your next idea is waiting...</h3>
+
+        <p id="idea-description">
+          Click the button above to discover something new.
+        </p>
+
+        <p
+          id="status-message"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        ></p>
+
+        <button id="favorite-btn" class="secondary-btn"
+          type="button" disabled>
+          Save to favorites
+        </button>
+      </article>
+    </section>
+
+    <section class="custom-panel" aria-labelledby="custom-heading">
+      <h2 id="custom-heading">Add your own idea</h2>
+
+      <form id="idea-form">
+        <div class="field">
+          <label for="custom-idea">Your idea or prompt</label>
+
+          <textarea
+            id="custom-idea"
+            name="customIdea"
+            rows="3"
+            maxlength="300"
+            required
+            placeholder="What have you been thinking about?"
+          ></textarea>
+        </div>
+
+        <div class="field">
+          <label for="custom-category">Category</label>
+
+          <select id="custom-category" name="customCategory">
+            <option value="writing">Writing</option>
+            <option value="web">Website ideas</option>
+            <option value="coding">Coding projects</option>
+            <option value="blogging">Blog topics</option>
+          </select>
+        </div>
+
+        <button type="submit">Add idea</button>
+      </form>
+    </section>
+
+    <section class="favorites-panel" aria-labelledby="favorites-heading">
+      <h2 id="favorites-heading">Your favorites</h2>
+
+      <p id="favorites-empty">
+        Your saved ideas will appear here.
+      </p>
+
+      <ul id="favorites-list" aria-label="Favorite ideas"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Brainstorm Box · Made for curious minds.</p>
+  </footer>
+</body>
+</html>
