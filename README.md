@@ -3,6 +3,7 @@
 Visit <a href="https://bee-create.github.io/BrainstormBox-Interactive-Idea-Generator/">my live page</a> to see the code perform.<br>
 <h3>Purpose of This Project</h3>
 BrainstormBox is an interactive idea generator designed to help users overcome creative blocks and discover fresh inspiration. Users can select a category or randomize their ideas, save favorites, and add their own custom prompts. The goal is to provide a flexible, easy-to-use space for brainstorming, creative exploration, and finding inspiration whenever ideas run dry.<br>
+<br>
 <b>Planned features:</b><br>
 -Choose an idea category or randomize it.<br>
 -Generate random ideas and creative prompts.<br>
